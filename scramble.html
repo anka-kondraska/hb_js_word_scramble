@@ -16,21 +16,18 @@
 
             // Grab a random word from the WORDS array
             var newWord = WORDS[Math.floor(WORDS.length * Math.random())];
-            console.log(newWord);
 
             var index = WORDS.indexOf(newWord);
-            console.log(index);
 
 
         // Grab the corresponding scrambled word from the SCRAMBLED array
-            var scrambledWord = SCRAMBLED[index] 
-            console.log(scrambledWord);
+            var scrambledWord = SCRAMBLED[index]
 
         // prompt the user to guess the original word when given the scrambled word
 
             alert("Here is your word: " + scrambledWord);
             guess = prompt("What's your guess?", scrambledWord);
-            console.log(guess);
+            guess = guess.trim().toLowerCase();
 
             if (guess === newWord){
                 alert("You got it right!");
