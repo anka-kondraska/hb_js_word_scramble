@@ -28,11 +28,20 @@
 
         // prompt the user to guess the original word when given the scrambled word
 
+            alert("Here is your word: " + scrambledWord);
+            guess = prompt("What's your guess?", scrambledWord);
+            console.log(guess);
+
+            if (guess === newWord){
+                alert("You got it right!");
+            } else {
+                alert("Sorry the correct word is "+ newWord);
+            }
         // If the user guesses wrong, tell them they were wrong and the right word.
         
         // If the user guesses the correct word, congratulate them.
 
-        playing = confirm("Press OK To keep playing or Cancel to quit");
+            playing = confirm("Press OK To keep playing or Cancel to quit");
 
             // What does confirm() return?
             // What does setting the playing variable do?
